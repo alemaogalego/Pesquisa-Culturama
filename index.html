@@ -11,7 +11,7 @@
     </header>
     <section>   
         <form action ="" method="get">
-            <!-- <fieldset>
+             <fieldset>
                 
                 <legend>Formulário de Pesquisa</legend>
                 <label for="userName">Nome:</label>
@@ -32,29 +32,29 @@
                 <label for="userPhoto">Envie sua foto:</label>
                 <input id="userPhoto" type="file" name="userPhoto" accept="image/*">   
                 <br>
-            </fieldset>               -->
-            <fieldset>
+            </fieldset>               
+            <fieldset> 
                 <legend>Perfil</legend>
-                <!-- <p>Gênero:</p>
-                <input type="radio" name="userGender" 
+                    <p>Gênero:</p>
+                <input id="female" type="radio" name="userGender" 
                 value="Feminino">
-                <label for="userGender">Feminino</label>
+                <label for="female">Feminino</label>
 
-                <input type="radio" name="userGender" 
+                <input id="male" type="radio" name="userGender" 
                 value="Masculino">
-                <label for="userGender">Masculino</label>
+                <label for="male">Masculino</label>
 
-                <input type="radio" name="userGender" 
+                <input id="noInfo" type="radio" name="userGender" 
                 value="Prefiro não informar">
-                <label for="userGender">Prefiro não informar</label>  -->
+                <label for="noInfo">Prefiro não informar</label>  
 
-                <label for="userGender">Gênero:</label>
+                <!-- <label for="userGender">Gênero:</label>
                 <select id="userGender" name="userGender" required>
                     <option value="" disabled selected>Selecione</option>
                     <option value="Masculino">Masculino</option>
                     <option value="Feminino">Feminino</option>
                     <option value="Prefiro não informar">Prefiro não informar</option>
-                </select>    
+                </select>     -->
                 <br>
 
                 <label for="maritalStatus">Estado Civil:</label>
@@ -100,6 +100,41 @@
                 <label for="userCity">Cidade:</label>
                 <input type="text" id="userCity" name="userCity" autocomplete="address-level2"  placeholder="Ex.: Fortaleza">
             </fieldset>
+            <fieldset>
+                <legend>Hábitos Culturais</legend>
+                <p>Redes Sociais</p>
+                <input id="instagram" type="checkbox" name="socialMedia" value="Instagram">
+                <label for="instagram">Instagram</label>
+                <br>
+                <input id="facebook" type="checkbox" name="socialMedia" value="Facebook">
+                <label for="facebook">Facebook</label>
+                <br>
+                <input id="x" type="checkbox" name="socialMedia" value="X">
+                <label for="x">X</label>
+                <br>
+                <input id="linkedin" type="checkbox" name="socialMedia" value="Linkedin">
+                <label for="linkedin">Linkedin</label>
+                <br>
+
+                <label for="musicStyle">Estilo Musical</label>
+                <input id="musicStyle" type="text" name="musicStyle" list="StylesTypes">
+                <datalist id="StylesTypes">
+                    <option value="Pop"></option>
+                    <option value="Rock"></option>
+                    <option value="Sertanejo"></option>
+                    <option value="Funk"></option>
+                    <option value="Clássica"></option>
+                    <option value="Jazz"></option>
+                    <option value="Eletrônica"></option>
+                    <option value="Axé"></option>
+                    <option value="Forró"></option>
+                </datalist>
+                <br>
+
+                <label for="favoritecolor">Cor Favorita</label>
+                <input id="favoritecolor" type="color" name="favoritecolor" value="#000000">
+
+            </fieldset>    
             <button type="submit">Enviar</button>
         </form>
     </section>   
