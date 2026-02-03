@@ -103,18 +103,36 @@
             <fieldset>
                 <legend>Hábitos Culturais</legend>
                 <p>Redes Sociais</p>
-                <input type="checkbox" name="socialMedia" value="Instagram">
-                <label for="socialMedia">Instagram</label>
+                <input id="instagram" type="checkbox" name="socialMedia" value="Instagram">
+                <label for="instagram">Instagram</label>
                 <br>
-                <input type="checkbox" name="socialMedia" value="Facebook">
-                <label for="socialMedia">Facebook</label>
+                <input id="facebook" type="checkbox" name="socialMedia" value="Facebook">
+                <label for="facebook">Facebook</label>
                 <br>
-                <input type="checkbox" name="socialMedia" value="X">
-                <label for="socialMedia">X</label>
+                <input id="x" type="checkbox" name="socialMedia" value="X">
+                <label for="x">X</label>
                 <br>
-                <input type="checkbox" name="socialMedia" value="Linkedin">
-                <label for="socialMedia">Linkedin</label>
+                <input id="linkedin" type="checkbox" name="socialMedia" value="Linkedin">
+                <label for="linkedin">Linkedin</label>
                 <br>
+
+                <label for="musicStyle">Estilo Musical</label>
+                <input id="musicStyle" type="text" name="musicStyle" list="StylesTypes">
+                <datalist id="StylesTypes">
+                    <option value="Pop"></option>
+                    <option value="Rock"></option>
+                    <option value="Sertanejo"></option>
+                    <option value="Funk"></option>
+                    <option value="Clássica"></option>
+                    <option value="Jazz"></option>
+                    <option value="Eletrônica"></option>
+                    <option value="Axé"></option>
+                    <option value="Forró"></option>
+                </datalist>
+                <br>
+
+                <label for="favoritecolor">Cor Favorita</label>
+                <input id="favoritecolor" type="color" name="favoritecolor" value="#000000">
 
             </fieldset>    
             <button type="submit">Enviar</button>
