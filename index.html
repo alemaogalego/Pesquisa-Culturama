@@ -12,8 +12,7 @@
     </header>
     <section>   
         <form action ="" method="get">
-             <fieldset>
-                
+             <fieldset>   
                 <legend>Formulário de Pesquisa</legend>
                 <label for="userName">Nome:</label>
                 <input id="userName" type="text" name="userName" required>
@@ -145,14 +144,24 @@
                 <label for="satisfacao">Satisfação</label>
                 <input id="satisfacao" type="range" name="satisfacao" min="0" max="4" step="1" list="niveis" oninput="mostrarStatus(this.value)">
                 <datalist id="niveis">
+                    <option value="0" label="Péssimo"></option>
                     <option value="1" label="Ruim"></option>
                     <option value="2" label="Regular"></option>
                     <option value="3" label="Boa"></option>
                     <option value="4" label="Ótima"></option>
                 </datalist>
-                <span id="valorStatus">Ruim</span>
-            </fieldset>   
+                <span id="valorStatus">Regular</span>
+            </fieldset> 
+            <fieldset>  
+                <legend>Termos de Consentimento</legend>
+                <input id="consent" type="checkbox" name="userLGPD" value="accepted" required>
+                <label for="consent">Eu concordo em participar desta pesquisa e autorizo o uso dos meus dados para fins estatísticos.</label><br>
+
+                <input type="checkbox" name="userGetResult" value="accepted" id="getResult">
+                <label for="getResult">Desejo receber os resultados da pesquisa por e-mail.</label>
+            </fieldset>  
             <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
         </form>
     </section>   
 </body>
