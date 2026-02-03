@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/form.js"></script>
     <title>Pesquisa Culturama</title>
 </head>
 <body>
@@ -134,7 +135,23 @@
                 <label for="favoritecolor">Cor Favorita</label>
                 <input id="favoritecolor" type="color" name="favoritecolor" value="#000000">
 
-            </fieldset>    
+            </fieldset> 
+            <fieldset>
+                <legend>Comentários</legend>
+                <label for="userComments">Deixe aqui suas sugestões ou críticas:</label>
+                <br>
+                <textarea id="userComments" name="userComments" rows="4" cols="50" placeholder="Escreva suas sugestões ou críticas aqui..."></textarea>
+                <br>
+                <label for="satisfacao">Satisfação</label>
+                <input id="satisfacao" type="range" name="satisfacao" min="0" max="4" step="1" list="niveis" oninput="mostrarStatus(this.value)">
+                <datalist id="niveis">
+                    <option value="1" label="Ruim"></option>
+                    <option value="2" label="Regular"></option>
+                    <option value="3" label="Boa"></option>
+                    <option value="4" label="Ótima"></option>
+                </datalist>
+                <span id="valorStatus">Ruim</span>
+            </fieldset>   
             <button type="submit">Enviar</button>
         </form>
     </section>   
