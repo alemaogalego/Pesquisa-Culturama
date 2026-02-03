@@ -7,10 +7,38 @@
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Pesquisa Culturama</h1> 
+        <h1>Pesquisa Online</h1> 
     </header>
     <section>   
+        <form action ="" method="get">
+            <fieldset>
+                <!-- DADOS PESSOAIS -->
+                <legend>Formulário de Pesquisa</legend>
+                <!-- DADOS PESSOAIS -->
+                <label for="userName">Nome:</label>
+                <input type="text" name="userName" required>
+                <br>
+                <label for="userAge">Idade:</label>
+                <input type="number" name="userAge" min="12" max="100" required>
+                <br>
+                <label for="birthDate">Data de Nascimento:</label>
+                <input type="date" name="birthDate">
+                <br>
+                <label for="userEmail">E-mail:</label>
+                <input type="email" name="userEmail" required>
+                <br>
+                <label for="userPhone">Telefone:</label>
+                <input type="tel" name="userPhone" pattern="[0-9]{11}" placeholder="DDD + Numero sem espaços">
+                <br>
+                <label for="userPhoto">Envie sua foto:</label>
+                <input type="file" name="userPhoto" accept="image/*">   
+                <br>
 
+
+            </fieldset>            
+            
+            <button type="submit">Enviar</button>
+        </form>
     </section>   
 </body>
 </html>
