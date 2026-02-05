@@ -72,3 +72,35 @@ input[type="color"]{
     width: 50px;
     padding: 0 5px;
 }
+
+input:invalid,
+select:invalid,
+textarea:invalid{
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid{
+    border-color: green;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #fff;    
+    border: 2px solid #cccbcb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="reset"]:hover{
+    background-color: #f44336;
+    color: white;
+}
